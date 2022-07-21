@@ -7,6 +7,8 @@ function Navbar() {
       <nav className="Navbar">
         <div className= "navbar-links">
             <NavLink activeClassName="active" to='/home'>Home</NavLink>
+            <NavLink activeClassName="active" to='/artists'>Artists</NavLink>
+            <NavLink activeClassName="active" to='/explore'>Explore</NavLink>
             {/* <NavLink activeClassName="active" to={user ? '/mypage' : '/login'}>{user ? "My Page" : "Login"}</NavLink> */}
             {/* {user ? <button className="logout-button" onClick={handleLogoutClick}>Logout</button> : null} */}
             {/* use state for to and content */}
