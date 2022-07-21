@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Home from '../Home/Home';
@@ -9,9 +10,21 @@ import Signup from '../Signup/Signup';
 import MyPage from '../MyPage/MyPage';
 
 function App() {
+  const [ user, setUser ] = useState(null);
+  
+  useEffect(() => {
+    fetch("/me").then((resp) => {
+      if (resp.ok) {
+        resp.json().then((user) => {
+          setUser(user)
+        })
+      };
+    });
+  }, []);
+
   return (
     <div className="App">
-      <Navbar />
+      <Navbar user={user} setUser={setUser}/>
       <Routes>
         <Route exact path='/' element={<Home />}
         />

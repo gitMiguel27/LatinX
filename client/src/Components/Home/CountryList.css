@@ -1,0 +1,6 @@
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7.5em;
+    margin-right: 7.5em;
+}

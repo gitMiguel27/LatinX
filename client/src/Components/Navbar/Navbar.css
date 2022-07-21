@@ -1,0 +1,31 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 15em;
+    width: auto;
+}
+
+.navbar-links {
+    padding-top: 1em;
+}
+
+.navbar-links > * {
+    font-size: large;
+    font-family: 'Bungee', cursive;
+    background-color: brown;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0;
+    padding: 1em;
+}
+
+.navbar-links > *:hover {
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    color:rgb(255, 255, 255);
+}

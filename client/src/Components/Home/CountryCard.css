@@ -1,0 +1,36 @@
+.country-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1.5em;
+}
+
+.country-card:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    cursor: pointer;
+}
+
+.flags {
+    width: auto;
+    height: 20em;
+    margin: auto;
+    clip-path: circle();
+}
+
+.country-title {
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 8em;
+    font-size:larger;
+    font-family: 'Bungee', cursive;
+    background-color:  #edeaea;
+}
+
+.country-title:hover {
+    color: brown;
+}
